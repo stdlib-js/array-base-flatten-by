@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@stdlib/array-base-copy-indexed": "^0.1.0",
-    "@stdlib/array-base-zeros": "^0.1.0",
+    "@stdlib/array-base-zeros": "^0.1.1",
     "@stdlib/blas-ext-base-grev": "^0.1.0",
     "@stdlib/ndarray-base-numel": "^0.1.0",
     "@stdlib/ndarray-base-shape2strides": "^0.1.0",
