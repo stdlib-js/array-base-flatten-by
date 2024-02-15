@@ -44,13 +44,13 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import flattenBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@deno/mod.js';
+import flattenBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@v0.2.0-deno/mod.js';
 ```
 
 You can also import the following named exports from the package:
 
 ```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@deno/mod.js';
+import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@v0.2.0-deno/mod.js';
 ```
 
 #### flattenBy( x, shape, colexicographic, clbk\[, thisArg] )
@@ -156,7 +156,7 @@ y = flattenBy.assign( x, [ 2, 2 ], true, out, 1, 0, scale );
 ```javascript
 import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@deno/mod.js';
 import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@deno/mod.js';
-import flattenBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@deno/mod.js';
+import flattenBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@v0.2.0-deno/mod.js';
 
 var fcn = naryFunction( abs, 1 );
 
