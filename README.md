@@ -233,6 +233,12 @@ out = flattenBy( x, [ 2, 2, 1, 2, 2 ], true, fcn );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-base/flatten`][@stdlib/array/base/flatten]</span><span class="delimiter">: </span><span class="description">flatten an n-dimensional nested array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -308,6 +314,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-base-flatten-by/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-flatten-by/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/flatten]: https://github.com/stdlib-js/array-base-flatten
+
+<!-- </related-links> -->
 
 </section>
 
