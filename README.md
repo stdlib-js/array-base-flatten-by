@@ -37,20 +37,32 @@ limitations under the License.
 
 > Flatten an n-dimensional nested array according to a callback function.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-flatten-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import flattenBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { assign } from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@esm/index.mjs';
+var flattenBy = require( '@stdlib/array-base-flatten-by' );
 ```
 
 #### flattenBy( x, shape, colexicographic, clbk\[, thisArg] )
@@ -108,7 +120,7 @@ var count = ctx.count;
 Flattens an n-dimensional nested array according to a callback function and assigns elements to a provided output array.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
+var Float64Array = require( '@stdlib/array-float64' );
 
 function scale( v ) {
     return v * 2;
@@ -153,15 +165,10 @@ y = flattenBy.assign( x, [ 2, 2 ], true, out, 1, 0, scale );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import naryFunction from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@esm/index.mjs';
-import abs from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@esm/index.mjs';
-import flattenBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten-by@esm/index.mjs';
+```javascript
+var naryFunction = require( '@stdlib/utils-nary-function' );
+var abs = require( '@stdlib/math-base-special-abs' );
+var flattenBy = require( '@stdlib/array-base-flatten-by' );
 
 var fcn = naryFunction( abs, 1 );
 
@@ -216,10 +223,6 @@ out = flattenBy( x, [ 2, 2, 1, 2, 2 ], false, fcn );
 
 out = flattenBy( x, [ 2, 2, 1, 2, 2 ], true, fcn );
 // returns [ 1, 9, 5, 13, 3, 11, 7, 15, 2, 10, 6, 14, 4, 12, 8, 16 ]
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -229,6 +232,12 @@ out = flattenBy( x, [ 2, 2, 1, 2, 2 ], true, fcn );
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-base/flatten`][@stdlib/array/base/flatten]</span><span class="delimiter">: </span><span class="description">flatten an n-dimensional nested array.</span>
 
 </section>
 
@@ -243,7 +252,7 @@ out = flattenBy( x, [ 2, 2, 1, 2, 2 ], true, fcn );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -305,6 +314,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-base-flatten-by/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-flatten-by/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/flatten]: https://github.com/stdlib-js/array-base-flatten
+
+<!-- </related-links> -->
 
 </section>
 
