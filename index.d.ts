@@ -20,7 +20,7 @@
 
 // TypeScript Version: 4.1
 
-/// <reference types="@stdlib/types"/>
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 import { Collection, Array1D, Array2D, Array3D, Array4D, Array5D, Array6D, Array7D, Array8D, Array9D, Array10D } from '@stdlib/types/array';
 
